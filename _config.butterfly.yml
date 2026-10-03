@@ -1,0 +1,255 @@
+# ================================================
+# Butterfly 5.x 主题配置
+# 文档: https://butterfly.js.org/
+# ================================================
+
+# ---- 导航栏 ----
+nav:
+  logo:
+  display_title: true
+  fixed: true
+
+# ---- 菜单 ----
+menu:
+  首页: / || fas fa-home
+  归档: /archives/ || fas fa-archive
+  分类: /categories/ || fas fa-folder-open
+  标签: /tags/ || fas fa-tags
+  关于: /about/ || fas fa-user
+
+# ---- 社交链接 ----
+social:
+  fab fa-github: https://github.com/netbuffer || GitHub || "#63b3ed"
+
+# ---- 网站图标 Favicon ----
+favicon: /favicon.ico
+
+# ---- 个人头像与打字机副标题 ----
+avatar:
+  img: /img/avatar-cyber-dev.jpg
+  effect: true
+
+subtitle:
+  enable: true
+  effect: true
+  loop: true
+  source: false
+  sub:
+    - "认准了，就去做，不跟风，不动摇"
+    - "Java / Spring Cloud / DevOps / 全栈开发"
+    - "2026 拥抱 AI 大模型与 Agent 智能体时代"
+
+# ---- 首页 Banner 与顶图 ----
+index_img: /img/banner-hero-bg.jpg
+default_top_img: /img/banner-hero-bg.jpg
+error_img: /img/banner-hero-bg.jpg
+post_img: /img/banner-hero-bg.jpg
+
+# ---- 网站全局大背景图 ----
+# 配置全屏背景图片，可替换为任意图片路径（当前已预设指向 /img/background.jpg）
+background: /img/background.jpg
+
+# ---- 动态背景粒子 ----
+canvas_nest:
+  enable: false
+  color: '99,179,237'
+  pointColor: '167,139,250'
+  opacity: 0.75
+  zIndex: -1
+  count: 80
+
+# ---- 文章封面 ----
+cover:
+  index_enable: true
+  aside_enable: true
+  archives_enable: true
+  position: both
+  default_cover:
+    - /img/cover-bg.jpg
+
+post_copyright:
+  enable: true
+  decode: true
+  author_href: https://github.com/netbuffer
+  license: CC BY-NC-SA 4.0
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+# ---- 文章元信息 ----
+post_meta:
+  page:
+    date_type: both
+    date_format: YYYY-MM-DD
+    categories: true
+    tags: true
+    label: true
+  post:
+    date_type: both
+    date_format: YYYY-MM-DD
+    categories: true
+    tags: true
+    label: true
+
+# 文章字数统计
+wordcount:
+  enable: true
+  post_wordcount: true
+  min2read: true
+  total_wordcount: false
+
+# ---- 侧边栏 ----
+aside:
+  enable: true
+  hide: false
+  button: true
+  mobile: false
+  position: right
+  display:
+    archive: true
+    tag: true
+    category: true
+  card_author:
+    enable: true
+    description: '认准了，就去做，不跟风，不动摇'
+    button:
+      enable: true
+      icon: fab fa-github
+      text: GitHub
+      link: https://github.com/netbuffer
+  card_announcement:
+    enable: true
+    content: 👋 你好！这是 netbuffer 的技术博客，记录从 2014 年至今的技术成长历程。
+  card_weibo:
+    enable: false
+  card_categories:
+    enable: true
+    limit: 8
+    expand: none
+    orderby: count
+    order: -1
+  card_tags:
+    enable: true
+    limit: 40
+    color: true
+    orderby: random
+    order: 1
+  card_archives:
+    enable: true
+    type: monthly
+    format: MMMM YYYY
+    order: -1
+    limit: 8
+  card_webinfo:
+    enable: true
+    post_count: true
+    last_push_date: true
+    useragent: false
+
+# ---- 底部 Footer ----
+footer:
+  owner:
+    enable: true
+    since: 2014
+  custom_text: 基于 <a href="https://hexo.io/" target="_blank">Hexo</a> | 主题 <a href="https://butterfly.js.org/" target="_blank">Butterfly</a>
+  copyright: true
+
+# ---- 暗色主题开关 ----
+darkmode:
+  enable: true
+  button: true
+  autoChangeMode: false
+
+# ---- 主题色 ----
+# 默认关闭自定义覆盖，使用 Butterfly 原生主题色彩
+theme_color:
+  enable: false
+
+# ---- 代码块 ----
+highlight_theme: mac
+highlight_copy: true
+highlight_lang: true
+highlight_shrink: false
+highlight_height_limit: false
+code_word_wrap: false
+
+# ---- 字体 ----
+font:
+  global-font-size: '16px'
+  code-font-size: '14px'
+  font-family: "-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', 'Noto Sans SC', Roboto, sans-serif"
+  code-font-family: "'JetBrains Mono', 'Fira Code', Menlo, monospace"
+
+# ---- 图片懒加载 ----
+lazyload:
+  enable: true
+  field: post
+  placeholder: /img/loading.gif
+  blur: false
+
+# ---- Medium Zoom ----
+medium_zoom: true
+
+# ---- 动画 ----
+animation:
+  enable: true
+  gsap: true
+
+# ---- 顶部进度条 ----
+nprogress:
+  enable: true
+  color: "#63b3ed"
+
+# ---- 右下角按钮 ----
+rightside:
+  enable: true
+
+# ---- 文章目录 ----
+toc:
+  post: true
+  page: false
+  number: true
+  expand: false
+  style_simple: false
+  scroll_percent: true
+
+# ---- 搜索 ----
+local_search:
+  enable: true
+  preload: true
+  CDN:
+
+# ---- 评论（暂时关闭）----
+comments:
+  use:
+  text: true
+  lazyload: false
+  count: false
+  card_post_count: false
+
+# ---- 数学公式 ----
+katex:
+  enable: false
+mathjax:
+  enable: false
+
+# ---- 图标库 ----
+use_icon:
+  type: font_awesome
+  version: 6
+
+# ---- 自定义注入 ----
+inject:
+  head:
+    - <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
+    - <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.png">
+  bottom:
+
+# ---- 标签插件 ----
+plugins:
+  note:
+    note_class: flat
+    style_unavailable: false
+  tabs:
+    transition: true
+    border: false
+  series:
+    enable: true

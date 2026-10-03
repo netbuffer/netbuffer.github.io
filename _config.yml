@@ -1,0 +1,71 @@
+# ==============================
+# netbuffer 个人博客 - Hexo 配置
+# Theme: Butterfly
+# ==============================
+
+# Site
+title: netbuffer 的个人博客
+subtitle: '认准了，就去做，不跟风，不动摇'
+description: '学习笔记，记录技术成长，Java / Cloud / AI / 全栈开发'
+keywords: Java, Spring Cloud, AI, 大模型, 微服务, 全栈开发, 技术博客
+author: netbuffer
+language: zh-CN
+timezone: 'Asia/Shanghai'
+
+# URL
+url: https://netbuffer.github.io
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: false
+  trailing_html: false
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+skip_render:
+  - README.md
+
+# Writing
+new_post_name: :title.md
+default_layout: post
+titlecase: false
+external_link:
+  enable: true
+  field: site
+filename_case: 0
+render_drafts: false
+post_asset_folder: true
+relative_link: false
+future: true
+
+# 代码高亮
+syntax_highlighter: highlight.js
+highlight:
+  line_number: true
+  auto_detect: true
+  tab_replace: '  '
+  wrap: true
+  hljs: false
+
+# Home page
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# Category and Tag
+default_category: 技术笔记
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+updated_option: 'mtime'
+
+# Pagination
+per_page: 10
+pagination_dir: page
+
+# Theme
+theme: butterfly
